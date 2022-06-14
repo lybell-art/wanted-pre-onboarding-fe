@@ -1,15 +1,19 @@
 import React, {useState, useRef} from 'react';
 import styled from 'styled-components';
 
+const EnterKey = 13;
+
 const Div = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 7px;
 `
 
 const CommentP = styled.p`
 	width: 100%;
-	height: 1.5em;
+	min-height: 1.5em;
+	word-break: break-all;
+	white-space: pre-line;
 `
 
 const Bold = styled.span`
@@ -17,6 +21,33 @@ const Bold = styled.span`
 	padding-right: 20px;
 `;
 
+const Form = styled.form`
+	width: 100%;
+	min-height: 40px;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+`;
+
+const Textarea = styled.textarea`
+	min-height: 100%;
+	resize: none;
+`
+
+const Button = styled.button`
+	width: 70px;
+	height: 100%;
+	background-color: transparent;
+	color: #00b0ff;
+	cursor: pointer;
+`
+
+function extractID(str)
+{
+	return str.split('@')[0];
+}
 
 
 function Comment({userID, text})
@@ -29,14 +60,30 @@ function Comment({userID, text})
 
 function CommentBox()
 {
-	const [comments, setComments] = useState([ {userID:'35P', text:'Miko is Baby!', commentTime:0} ]);
+	const [comments, setComments] = useState([]);
 	const myComment = useRef();
+	const myButton = useRef();
+
+	const changeHeight = function(e)
+	{
+		e.target.style.height = '100%';
+		e.target.style.height = e.target.scrollHeight + 'px';
+	}
+
+	const handleEnter = function(e)
+	{
+		if(e.keyCode === EnterKey && (!e.shiftKey && !e.ctrlKey))
+		{
+			e.preventDefault();
+			if(myButton.current) myButton.current.click();
+		}
+	}
 
 	const handleSubmit = function(e)
 	{
 		e.preventDefault();
 		const newComment = myComment.current.value;
-		const userID = localStorage.getItem('sessionID');
+		const userID = extractID( localStorage.getItem('sessionID') );
 
 		setComments(comments=>[...comments, {userID, text: newComment, commentTime: Date.now()}]);
 		myComment.current.value = '';
@@ -47,10 +94,16 @@ function CommentBox()
 		{comments.map( ({userID, text, commentTime}, i)=>
 			<Comment userID={userID} text={text} key={`${userID}_${commentTime}`} /> 
 		)}
-		<form onSubmit={handleSubmit}>
-			<input type='textarea' ref={myComment}/>
-			<button>submit</button>
-		</form>
+		<Form onSubmit={handleSubmit}>
+			<Textarea cols="70" 
+				placeholder="댓글달기" 
+				wrap="hard" 
+				onChange={changeHeight} 
+				onKeyDown={handleEnter}
+				ref={myComment}
+			/>
+			<button ref={myButton}>게시</button>
+		</Form>
 	</Div>
 }
 

@@ -3,10 +3,14 @@ import CommentBox from './CommentBox.jsx';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-	width: 60%;
-    padding: 20px;
-    border: 1px solid #eeee;
-    box-shadow: 2px 2px 6px #0002;
+	width: 600px;
+	padding: 20px;
+	border: 1px solid #eeee;
+	box-shadow: 2px 2px 6px #0002;
+
+	@media only screen and (max-width: 767px) {
+		width: 100%;
+	}
 `;
 
 const TitleArea = styled.div`
@@ -22,9 +26,9 @@ const TitleArea = styled.div`
 
 const Profile = styled.div`
 	width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-image: linear-gradient(360deg, #ff8080, #ffd23e);
+	height: 30px;
+	border-radius: 50%;
+	background-image: linear-gradient(360deg, #ff8080, #ffd23e);
 `;
 
 const NameSpace = styled.p`
@@ -36,7 +40,7 @@ const ImagePlaceholder = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 `;
 
 const Img = styled.img`
@@ -44,14 +48,15 @@ const Img = styled.img`
 `;
 
 const DateText = styled.p`
-    text-align: end;
-    font-size: 0.75em;
-    color: #aaa;
+	text-align: end;
+	font-size: 0.75em;
+	color: #aaa;
 `;
 
 const Description = styled.div`
-    width: 100%;
-    min-height: 50px;
+	width: 100%;
+	min-height: 50px;
+	padding: 5px 0px;
 `;
 
 
