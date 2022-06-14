@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CommentBox from './CommentBox.jsx';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -50,7 +51,7 @@ const DateText = styled.p`
 
 const Description = styled.div`
     width: 100%;
-    min-height: 100px;
+    min-height: 50px;
 `;
 
 
@@ -72,6 +73,7 @@ function Feed({ name, date, image, content })
 		<ImagePlaceholder><Img src={image} alt="image"/></ImagePlaceholder>
 		<DateText>{new Date(date).toLocaleString()}</DateText>
 		<Description>{content}</Description>
+		<CommentBox />
 	</Wrapper>
 }
 
