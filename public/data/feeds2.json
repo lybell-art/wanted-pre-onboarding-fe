@@ -1,50 +1,50 @@
 [
 	{
-		"who": "dimigo",
+		"who": "nekarakubae",
 		"upload_date": 1488976224001,
-		"img": "https://www.dimigo.hs.kr/layouts/minimal_dimigo/images/background.jpg",
-		"content": "야 나는 디미고 졸업생이다!!!!!"
+		"img": "https://static.wanted.co.kr/images/events/1790/4a9d253f.png",
+		"content": "우리는 왜 성장하고 싶을까요? ‘내가 성장을 하긴 했을까?’, ‘성장은 어떤 의미를 가질까?’에 대해 생각을 깊이 해보셨으면 좋겠어요. 생각해 보면 성장해야 하는 이유는 많아요. 워라밸, 더 나은 삶, 연봉, 커리어, 아니면 성장 자체가 행복이고 만족으로 다가올 수도 있겠죠. 이렇듯 성장을 바라보는 요소는 개인마다 다양하게 다가옵니다. 근본적으로 우리가 무언가를 이루기 위해 성장하고 싶은 건지, 아니면 성장 그 자체에서 무언가를 얻고 싶은 건지, 성장이 나에게 어떤 의미를 가지는지가 선행돼야 합니다."
 	},
 	{
-		"who": "miko",
+		"who": "nekarakubae",
 		"upload_date": 1535771135001,
-		"img": "https://source.unsplash.com/oko_4WnoM98",
-		"content": "애기야... 지켜줘야 해..."
+		"img": "https://static.wanted.co.kr/images/events/1790/adc490be.png",
+		"content": "목표로 두는 회사가 어디냐에 따라 다르겠지만, Angular든 React든 Vue든 결국 JavaScript거든요. Angular를 잘하는 사람은 React를 금방 잘 할 수 있고, Angular를 잘 하지 못하는 사람은 React도 금방 잘하기 어렵기 때문에 그것에 대해 크게 걱정할 필요 없으니까 조금씩 과감하게 도전해 보는 것을 추천하고요. 가고 싶은 회사가 높은 목표를 갖고 있는, 요새 유행하는 ‘네카라쿠배’ 같은 회사라면 Angular를 하셨어도 실력 있는 사람들을 뽑을 수 있는 프로세스가 갖춰져있기 때문에 충분히 노력만 하시면 그런 걱정은 하실 필요가 없을 것 같습니다."
 	},
 	{
-		"who": "codebakery",
+		"who": "the_binary",
 		"upload_date": 1439070000001,
-		"img": "https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/83909818_1169967913208356_3374371825248108544_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5BqZHUYLe00AX-wCXW2&_nc_ht=scontent-ssn1-1.xx&oh=00_AT-bockI6TPobyTqgvOHyWpRc4EdVqNsLiNZZ5bQEzroTw&oe=62CD3C26",
-		"content": "코븐의 탄생 순간인가"
+		"img": "https://e.snmc.io/i/1200/s/5e6cd33513ccf5e56a15d36f7709f577/9548989",
+		"content": "더 바이너리는 왜 팬클럽 한정 생방송만 하나요? 그것은 저희가 유튜브에 관심이 없기 때문이지요!"
 	},
 	{
 		"who": "Lybell",
 		"upload_date": 1631468184001,
-		"img": "https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/237129921_1579465372258606_8953349216192443655_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=h0qzqRaw8dQAX-PR0ay&_nc_ht=scontent-ssn1-1.xx&oh=00_AT8ir7ZtHeqyWpffjALEPBnC9VZVJR3gMGDJUgsXbe1xkA&oe=62AE02A7",
-		"content": "내가 원작자인 코븐 굿즈가 나오긴 했는데... 이거 나한테 허락 맡고 만드는 거 맞나"
+		"img": "https://source.unsplash.com/random/5000x3000",
+		"content": "React의 UseEffect는 잘못 만들어졌어"
 	},
 	{
 		"who": "unsplash",
 		"upload_date": 1578913568001,
-		"img": "https://source.unsplash.com/random/600x500",
+		"img": "https://source.unsplash.com/random/400x400",
 		"content": "아주 멋있는 언스플래시 풍경을 만나보세요!"
 	},
 	{
 		"who": "unsplash",
 		"upload_date": 1623456789001,
-		"img": "https://source.unsplash.com/random/1080x720",
+		"img": "https://source.unsplash.com/random/200x200",
 		"content": "아주 멋있는 언스플래시 풍경을 만나보세요! 그 두번째!"
 	},
 	{
-		"who": "thornapple",
+		"who": "wanted",
 		"upload_date": 1565464030001,
-		"img": "https://w.namu.la/s/ee0c1c01e5be148864ba27642df309e63ab87334c7a67ffcb6b729acb1af4fce8beb7976c482b2e37a98e14f5d5d4f5aee1ab96745163748c60c53f54479a4f1e8cad886ae8680919701778d4260c125fa120f3c9b3134e9865db60ec75b76e2",
-		"content": "혀! 기! 밑에 가라 앉은! 것! 들을! 건져 내어! 별 들 을 나흘테야하!"
+		"img": "https://static.wanted.co.kr/images/wantedplus_event/preonboarding/p18_frontend/main_img.png",
+		"content": "막막한 주니어 취업, 신입은 어디서 경험을 쌓고 어떻게 취업하나요?\n원티드 프리온보딩 코스가 주니어 인재와 기업을 연결하여 실무 경험부터 취업까지의 여정을 지원합니다."
 	},
 	{
 		"who": "thornapple",
 		"upload_date": 1405173972001,
-		"img": "https://source.unsplash.com/XhWntGj2N98",
-		"content": "흐르는 초코 흐르는 초코 흐르는 초코 흐어어어어어얽"
+		"img": "https://source.unsplash.com/random/800x800",
+		"content": "너가 흐르는 아스팔트 위에~"
 	}
 ]
