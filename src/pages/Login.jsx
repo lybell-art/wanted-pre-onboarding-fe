@@ -100,8 +100,8 @@ function Login()
 		const PW = pwInput.current.value;
 		if( !(validateID(ID) && validatePW(PW)) ) return;
 
-//		localStorage.setItem('sessionID', ID);
-//		localStorage.setItem('sessionPW', PW);
+		localStorage.setItem('sessionID', ID);
+		localStorage.setItem('sessionPW', PW);
 		console.log({ID, PW});
 		navigate('../main', { replace: true, state: ID });
 	}
