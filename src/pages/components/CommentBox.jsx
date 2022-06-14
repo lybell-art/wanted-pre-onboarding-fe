@@ -29,6 +29,7 @@ const Form = styled.form`
 	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 `;
 
 const Textarea = styled.textarea`
@@ -37,11 +38,13 @@ const Textarea = styled.textarea`
 `
 
 const Button = styled.button`
-	width: 70px;
-	height: 100%;
+	width: 50px;
+	height: 30px;
 	background-color: transparent;
 	color: #00b0ff;
 	cursor: pointer;
+	font-size: 1em;
+	flex-shrink: 0;
 `
 
 function extractID(str)
@@ -85,6 +88,8 @@ function CommentBox()
 		const newComment = myComment.current.value;
 		const userID = extractID( localStorage.getItem('sessionID') );
 
+		if(newComment === '') return;
+
 		setComments(comments=>[...comments, {userID, text: newComment, commentTime: Date.now()}]);
 		myComment.current.value = '';
 	}
@@ -96,13 +101,13 @@ function CommentBox()
 		)}
 		<Form onSubmit={handleSubmit}>
 			<Textarea cols="70" 
-				placeholder="댓글달기" 
+				placeholder="댓글달기..." 
 				wrap="hard" 
 				onChange={changeHeight} 
 				onKeyDown={handleEnter}
 				ref={myComment}
 			/>
-			<button ref={myButton}>게시</button>
+			<Button ref={myButton}>게시</Button>
 		</Form>
 	</Div>
 }

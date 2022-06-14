@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import ImageButton from './ImageButton.jsx';
+import Logo from './Logo.jsx';
 
 const Nav = styled.nav`
 	position: fixed;
@@ -42,10 +43,6 @@ const Input = styled.input`
 	}
 `;
 
-const Logo = styled.img`
-	width: 160px;
-`;
-
 const Buttons = styled.div`
 	width: 160px;
 	display: flex;
@@ -71,7 +68,7 @@ function NavBar()
 {
 	return <Nav>
 		<Wrapper>
-			<Logo src="assets/instagram_logo.svg" alt="fakestagram_logo" />
+			<Logo />
 			<Input placeholder="Search"></Input>
 			<Buttons>
 				<ImageButton image="assets/navigate.svg" />
